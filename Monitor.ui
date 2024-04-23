@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1032</width>
+    <width>1065</width>
     <height>452</height>
    </rect>
   </property>
@@ -348,7 +348,7 @@ border-radius: 8px;</string>
         </rect>
        </property>
       </widget>
-      <widget class="QLCDNumber" name="BloodTemperature">
+      <widget class="QLCDNumber" name="Conductivity">
        <property name="geometry">
         <rect>
          <x>220</x>
@@ -376,24 +376,6 @@ border-radius: 8px;</string>
         <string>Blood Flow Rate</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_6">
-       <property name="geometry">
-        <rect>
-         <x>230</x>
-         <y>30</y>
-         <width>141</width>
-         <height>20</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Blood Temperature</string>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_7">
        <property name="geometry">
         <rect>
@@ -412,40 +394,11 @@ border-radius: 8px;</string>
         <string>Desired Flow Rate</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_9">
-       <property name="geometry">
-        <rect>
-         <x>380</x>
-         <y>80</y>
-         <width>81</width>
-         <height>81</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>Assets/thermometer.png</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
-      <widget class="QLCDNumber" name="ConductivityLCD">
-       <property name="geometry">
-        <rect>
-         <x>220</x>
-         <y>170</y>
-         <width>141</width>
-         <height>81</height>
-        </rect>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_10">
        <property name="geometry">
         <rect>
          <x>240</x>
-         <y>260</y>
+         <y>30</y>
          <width>141</width>
          <height>21</height>
         </rect>
@@ -468,7 +421,7 @@ border-radius: 8px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1032</width>
+     <width>1065</width>
      <height>26</height>
     </rect>
    </property>
