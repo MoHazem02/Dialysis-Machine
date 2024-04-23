@@ -1,5 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import sys
+from ApplicationManager import *
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -103,7 +104,7 @@ class Ui_MainWindow(object):
         self.BloodFlowRate = QtWidgets.QLCDNumber(self.groupBox_2)
         self.BloodFlowRate.setGeometry(QtCore.QRect(30, 60, 141, 101))
         self.BloodFlowRate.setObjectName("BloodFlowRate")
-        self.increase_button = QtWidgets.QPushButton(self.groupBox_2)
+        self.increase_button = QtWidgets.QPushButton(self.groupBox_2, clicked = lambda: Main.increment_flow())
         self.increase_button.setEnabled(True)
         self.increase_button.setGeometry(QtCore.QRect(130, 280, 91, 31))
         font = QtGui.QFont()
@@ -117,7 +118,7 @@ class Ui_MainWindow(object):
 "border-style: outset;\n"
 "border-radius: 8px;")
         self.increase_button.setObjectName("increase_button")
-        self.decrease_button = QtWidgets.QPushButton(self.groupBox_2)
+        self.decrease_button = QtWidgets.QPushButton(self.groupBox_2, clicked = lambda: Main.decrement_flow())
         self.decrease_button.setGeometry(QtCore.QRect(30, 280, 91, 31))
         font = QtGui.QFont()
         font.setPointSize(9)
@@ -202,5 +203,6 @@ if __name__ == "__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
+    Main = ApplicationManager(ui)
     MainWindow.show()
     sys.exit(app.exec_())
